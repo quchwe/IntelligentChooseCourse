@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FDFBF3"
+    android:padding="15dp" >
+	<Button
+		android:id="@+id/loginButtonId"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_alignParentLeft="true"
+		android:background="@drawable/round_button"
+		android:text="登录"
+		android:textColor="#FFFFFF"
+		/>
+      <EditText  
+        	android:id="@+id/inputMimaId"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_above="@id/loginButtonId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/pslogo"
+            android:hint="密码"
+            android:inputType="textPassword" /> 
+         <EditText
+		     android:id="@+id/inputClientId"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_above="@+id/inputMimaId"
+		     android:layout_alignParentRight="true"
+		     android:layout_alignParentLeft="true"
+		     android:drawableLeft="@mipmap/userlogo"
+		     android:hint="学号"
+		     
+		      />
+
+
+	    <CheckBox 
+	        android:id="@+id/RMima"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="记住密码"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/loginButtonId"
+	        android:textColor="#9A9795"
+	        />
+
+		 <Button
+		     android:id="@+id/fMimaID"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignBaseline="@+id/RMima"
+		     android:layout_alignBottom="@+id/RMima"
+		     android:layout_alignRight="@+id/loginButtonId"
+		     android:background="#00000000"
+		     android:text="忘记密码"
+		     android:textColor="#9A9795" />
+
+</RelativeLayout>

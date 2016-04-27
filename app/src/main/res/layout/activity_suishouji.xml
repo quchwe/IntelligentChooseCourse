@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <EditText
+        android:id="@+id/et_suiShou_title"
+        android:layout_width="match_parent"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:background="@drawable/edit_background"
+        android:hint="标题"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/et_suishou_message"
+        android:layout_width="match_parent"
+        android:minHeight="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:background="@drawable/edit_background"
+        android:hint="在这里写下你的笔记吧！"
+        android:gravity="start"/>
+
+<Button
+    android:id="@+id/btn_suishouji_save"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_button"
+    android:padding="10dp"
+    android:text="保存"
+    android:textColor="@android:color/white"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>
+</LinearLayout>

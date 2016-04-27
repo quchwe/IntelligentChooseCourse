@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/titlebar"></include>
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:orientation="horizontal">
+      <TextView
+          android:id="@+id/tv_iputGradeCourse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:textColor="@color/dark_blue"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:text="课程名："/>
+
+      <Button
+          android:id="@+id/btn_grade_query"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="查询"
+          android:textSize="14sp"
+          android:layout_marginLeft="5dp"
+          android:textColor="@color/white"
+          android:background="@drawable/round_button"
+
+          android:layout_alignBottom="@+id/et_inputGradeCourse"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true" />
+      <EditText
+          android:id="@+id/et_inputGradeCourse"
+          android:layout_toRightOf="@+id/tv_iputGradeCourse"
+          android:layout_toLeftOf="@+id/btn_grade_query"
+          android:layout_centerVertical="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+  </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+       android:text="查询结果："/>
+    <TextView
+        android:id="@+id/tv_gradeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+       />
+    <Button
+        android:id="@+id/btn_queryAllGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询所有课程成绩"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"/>
+    <ListView
+        android:layout_margin="5dp"
+        android:id="@+id/lv_gradelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

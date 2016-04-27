@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/titlebar"
+        ></include>
+
+     <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup 
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:gravity="bottom"
+        android:background="#f7f7f7"
+         android:orientation="horizontal"
+         
+        >
+        <RadioButton
+                    android:id="@+id/classoff"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/message"
+                    android:text="下课聊"
+                    android:textSize="10sp"
+                    android:textColor="#0799fc"
+                    />
+        <RadioButton
+                    android:id="@+id/course"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/course"
+                    android:text="课程"
+                    android:textSize="10sp"
+                     android:textColor="#0799fc"
+                     />
+        <RadioButton
+                    android:id="@+id/courseTable"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/cours"
+                    android:text="课表"
+                    android:textSize="10sp"
+                     android:textColor="#0799fc"
+                    />
+        <RadioButton
+                    android:id="@+id/myInfo"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/myinfo"
+                    android:text="我的"
+                    android:textSize="10sp"
+                     android:textColor="#0799fc"
+                    />
+        
+    </RadioGroup>
+    
+   <!-- </LinearLayout> -->
+   
+         <ImageView
+             android:id="@+id/iv_overtab" 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#f7f7f7"
+             android:layout_alignParentBottom="true"
+             
+             /> 
+
+</LinearLayout>

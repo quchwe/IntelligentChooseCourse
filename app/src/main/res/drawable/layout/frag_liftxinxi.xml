@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@id/android:list"
+            android:divider="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"></ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/android:list">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="设备名称"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sheBeiName"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/tv_tr"
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="设备所在区"
+                    android:padding="10dp"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+                <TextView
+                    android:id="@+id/tv_shebeisuozaiqu"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_toRightOf="@+id/tv_tr"
+                    android:textColor="@color/black"
+                    android:text="滨湖区"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_ty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/tv_shebeisuozaiqu"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/iv_companyarror"/>
+                <TextView
+                    android:id="@+id/tv_shebeisuozaijie"
+
+                    android:layout_toRightOf="@+id/iv_ty"
+                    android:text="河埒街道"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/tv_shebeisuozaijie"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/iv_companyarror"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tv_lift_jie"
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="详细地址"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_detailAddress"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_lift_jie"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="使用登记编号"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_useDengjiCode"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_4"
+                    android:text="使用单位         设备编号"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_syCompanyId"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_toRightOf="@+id/tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_she"
+                    android:text="设备场所         所在分类"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sbChangsuo"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_toRightOf="@+id/tv_she"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/iv_companyarror"/>
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_lift_economy"
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="经济类型"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_economyType"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_lift_economy"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp"
+                    android:src="@mipmap/iv_companyarror"/>
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="单位联系人"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_companyContact"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="手机"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_Mobile"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="电话"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_hone"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/tv_tw"
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="安全管理         负责人"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_safetyManager"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_tw"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_centerVertical="true"
+                    ></TextView>
+
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="管理部门"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_manage_branch"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="制造日期"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_create_date"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="设备型号"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_device_xh"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="出厂编号"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_chucangId"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="维保单位"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_weibaoCompany"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="维保单位         联系人"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_wbDanweiContact"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="手机"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_weibaoMobile"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/kuang_grey"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/company_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="电话"
+                    android:padding="@dimen/list_item_margin_left"
+                    android:background="@color/light_blue"
+                    android:textSize="@dimen/company_list_item_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lift_weibaoPhone"
+                    android:paddingLeft="@dimen/company_padding_left"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/company_list_item_text"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

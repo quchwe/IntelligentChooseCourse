@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.example.administrator.zhihuidianti.activity.LGJ.Dtwbxx_mx_fragmentActivity">
+    <ListView
+        android:divider="@null"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <!--<Button
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:id="@+id/btn_weibaoshixiang"
+        android:textColor="@color/white"
+        android:text="查看电梯维保事项"/>-->
+
+</LinearLayout>

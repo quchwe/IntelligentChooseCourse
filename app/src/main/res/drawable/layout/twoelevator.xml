@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:scrollbars="vertical"
+                >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/wathet"
+        >
+        <Button
+            android:id="@+id/btn_secondback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            android:text="返回"/>
+        <TextView
+            android:id="@+id/tv_eltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/max_text"
+            android:textColor="@color/white"
+            android:text="2号电梯"/>
+        <Button
+            android:id="@+id/btn_saosao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text=""/>
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_twomessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle_text"
+            android:gravity="left|center"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:drawableRight="@mipmap/arror"
+            android:text="基本情况和技术参数"/>
+
+        <Button
+            android:id="@+id/btn_15day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m_dp"
+            android:textSize="@dimen/middle_text"
+            android:gravity="left|center"
+            android:textColor="@color/wathet"
+            android:background="@color/white"
+            android:drawableRight="@mipmap/arror"
+            android:text="15天维护"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+        <LinearLayout
+            android:id="@+id/ly_15day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+            android:id="@+id/tv_15check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle_text"
+            android:text="选择检查部位"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/fenge"/>
+            <ListView
+                android:id="@+id/lv1_ele"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:choiceMode="multipleChoice"
+                android:dividerHeight="2px"
+                android:headerDividersEnabled="true"
+                android:scrollbars="none"
+                />
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/btn_threemonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m_dp"
+        android:textSize="@dimen/middle_text"
+        android:gravity="left|center"
+        android:textColor="@color/wathet"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:text="三个月维护"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+
+
+    <LinearLayout
+        android:id="@+id/ly_threemonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/max_text"
+            android:text="选择检查部位"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+
+        <ListView
+            android:id="@+id/lv2_ele"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_sixmonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m_dp"
+        android:textSize="@dimen/middle_text"
+        android:gravity="left|center"
+
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:text="六个月维护"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+
+    <Button
+        android:id="@+id/btn_telwvemonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m_dp"
+        android:textSize="@dimen/middle_text"
+        android:gravity="left|center"
+
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:text="十二个月维护"/>
+</LinearLayout>
+</ScrollView>

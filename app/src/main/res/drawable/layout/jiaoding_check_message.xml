@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:scrollbars="vertical">
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- 标题栏,用到tile_height,标题字体max_text-->
+    <include
+        layout="@layout/titlebar"></include>
+    <!-- 这个字体是middle_text-->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="@dimen/middle_text"
+        android:background="@color/grey"
+        android:text="预防事故发生，杜绝违规操作。 "/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="@dimen/middle_text"
+        android:background="@color/grey"
+        android:text="请认真检查下列事项:"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+    <TextView
+        android:layout_margin="@dimen/all_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/max_text"
+        android:textColor="@color/wathet"
+        android:text="     风险评估"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+    <ListView
+        android:id="@+id/list"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="2px"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"
+    />
+
+    <TextView
+        android:id="@+id/tv_checkposion"
+        android:layout_margin="@dimen/all_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/max_text"
+        android:textColor="@color/wathet"
+        android:text="     轿顶"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+    <ListView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="2px"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+
+    <Button
+        android:id="@+id/btn_jiaodingCheck_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/roundbutton_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/max_text"
+        android:text="提交"/>
+</LinearLayout>
+</ScrollView>

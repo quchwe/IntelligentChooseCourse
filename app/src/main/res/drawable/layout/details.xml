@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/darkblue"
+                    android:weightSum="1">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backbutton1"
+                android:text=" 返回"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp"/>
+        <TextView android:id="@+id/textTile"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textSize="20dp"
+                  android:text="通知"
+                  android:textColor="@color/white"
+                  android:gravity="center"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diandiandian1"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:background="@color/white"
+                  android:paddingTop="10dp"
+    >
+        <ImageView
+                android:background="@mipmap/dian"
+                android:id="@+id/log1"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/grey"
+                  android:id="@+id/title1"
+                  android:textSize="15dp"
+                  android:paddingLeft="5dp"
+                  android:text="22222"
+        />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/detailtitle"
+              android:background="@color/white"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:padding="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:text="习近平致电祝贺阮富仲再次当选越南共产党中央总书记"
+    />
+    <ImageView android:layout_width="100dp"
+               android:layout_height="80dp"
+               android:paddingLeft="5dp"
+               android:layout_marginLeft="10dp"
+               android:id="@+id/iamge1"
+               android:background="@mipmap/ic_launcher"
+
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:layout_marginRight="10dp"
+              android:id="@+id/neirong1"
+              android:textSize="15dp"
+              android:text="习近平指出，过去一年，在双方共同努力下，中美关系取得重要进展。我应奥巴马总统邀请对美国进行了成功的国事访问，双方就进一步推动构建中美新型大国关系达成新的共识。总的来看，无论是在经贸、两军、人文、网络安全等领域，还是在气候变化、伊朗核等国际地区和全球性问题上，中美的协调与合作都很有成效。"
+
+    />
+
+</LinearLayout>

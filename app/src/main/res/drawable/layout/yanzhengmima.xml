@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="为保障您的数据安全，修改密码前请填写原密码。"
+              android:background="#ffffff"
+              android:textColor="#000000"
+               android:textSize="15dp"/>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:id="@+id/shurudemima"
+          android:inputType="numberPassword"
+          android:textColor="#000000"
+          android:cursorVisible="true"
+          android:textCursorDrawable="@null"
+          />
+</LinearLayout>

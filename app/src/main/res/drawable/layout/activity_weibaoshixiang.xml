@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="0"
+    android:background="@drawable/table_frame_gray"
+    tools:context="com.example.administrator.zhihuidianti.activity.LGJ.WeibaoshixiangActivity">
+    <TableRow>
+        <TextView
+            android:text="类别"
+            android:background="@color/babygreen"
+            android:padding="3dip" />
+        <TextView
+            android:text="第一行第二列"
+            android:padding="3dip"
+            android:gravity="center_horizontal"
+            android:background="@color/babygreen"
+            ></TextView>
+        <TextView
+            android:text="第一行第三列"
+            android:gravity="right"
+            android:background="@color/babygreen"
+            android:padding="3dip" />
+        <TextView
+            android:text="第一行第三列"
+            android:gravity="right"
+            android:background="@color/babygreen"
+            android:padding="3dip" />
+    </TableRow>
+
+</TableLayout>

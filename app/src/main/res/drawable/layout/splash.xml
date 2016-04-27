@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash">
+    <ImageView
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_welcom"
+        android:src="@mipmap/logo_1"/>
+    <TextView
+        android:id="@+id/tv_yjt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="易检通电梯版管理系统"
+        android:textColor="@color/white"
+        android:textSize="@dimen/max_text"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/tv_welcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/max_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_yjt"
+        android:text="欢迎您使用"/>
+    <TextView
+        android:id="@+id/tv_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/middle_text"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_yjt"
+        android:text="安全第一  预防为主"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_hongting"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hongting"/>
+    <TextView
+        android:id="@+id/tv_hongting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="@dimen/min_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="无锡鸿廷科技有限公司"/>
+
+</RelativeLayout>

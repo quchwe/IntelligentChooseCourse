@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.zhihuidianti.activity.task.util.CheckableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--<CheckBox-->
+        <!--android:id="@+id/cb_checkbox"-->
+        <!--android:layout_width="@dimen/check_box"-->
+        <!--android:layout_height="@dimen/check_box"-->
+        <!--android:layout_gravity="right|center_vertical"-->
+
+        <!--android:clickable="false"-->
+        <!--android:focusable="false"-->
+        <!--android:enabled="false"-->
+        <!--android:button="@null"-->
+        <!--android:background="@drawable/checkbox_checked_style"-->
+        <!--/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="2222"
+            android:textColor="@color/black"
+            android:id="@+id/tv_check_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m_dp"
+            android:textSize="@dimen/min_text"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/imageview"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/duihao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </FrameLayout>
+
+</com.example.administrator.zhihuidianti.activity.task.util.CheckableFrameLayout>

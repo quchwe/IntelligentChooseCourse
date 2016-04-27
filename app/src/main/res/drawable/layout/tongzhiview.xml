@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@drawable/shape"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingTop="10dp"
+              android:orientation="vertical"
+              android:id="@+id/leftlayout"
+              android:layout_weight="1"
+>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+    >
+        <ImageView
+                android:background="@mipmap/dian"
+                android:id="@+id/log"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/grey"
+                  android:id="@+id/title"
+                  android:textSize="15dp"
+                  android:paddingLeft="5dp"
+                  android:text="22222"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="20dp"
+                  android:paddingTop="15dp"
+                  android:paddingBottom="10dp"
+    >
+        <ImageView android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:id="@+id/showimage"
+                   android:background="@mipmap/ic_launcher"
+        />
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:padding="5dp"
+                      android:layout_marginRight="10dp"
+                      android:id="@+id/neirong"
+                      android:maxLines="2"
+                      android:ellipsize="end"
+                      android:textSize="15dp"
+                      android:text="习近平指出，过去一年，在双方共同努力下，中美关系取得重要进展。我应奥巴马总统邀请对美国进行了成功的国事访问，双方就进一步推动构建中美新型大国关系达成新的共识。总的来看，无论是在经贸、两军、人文、网络安全等领域，还是在气候变化、伊朗核等国际地区和全球性问题上，中美的协调与合作都很有成效。"
+            />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/grey"
+                      android:paddingLeft="5dp"
+                      android:id="@+id/time"
+                      android:textSize="13dp"
+                      android:text="2016年1月28日 下午 14：40"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/rightlayout"
+              android:visibility="gone"
+              android:layout_weight="5"
+>
+    <Button android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/red"
+            android:text="删除"
+
+
+    />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请对本次服务进行评价,谢谢！"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/all_dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/roundbutton_blue"
+            android:textColor="@color/white"
+            android:text="一般"/>
+        <Button
+            android:id="@+id/btn_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/all_dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/roundbutton_blue"
+            android:textColor="@color/white"
+            android:text="满意"/>
+        <Button
+            android:id="@+id/btn_very"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/all_dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/roundbutton_blue"
+            android:textColor="@color/white"
+            android:text="非常满意"/>
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

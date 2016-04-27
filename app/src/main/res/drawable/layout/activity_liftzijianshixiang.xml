@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:orientation="vertical">
+    <include
+        layout="@layout/titlebar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/zhengjiao_textview_blue"
+            android:layout_weight="1"
+            android:text="序号"></TextView>
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/zhengjiao_textview_blue"
+            android:layout_weight="2"
+            android:text="项目类别"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/zhengjiao_textview_blue"
+                android:layout_weight="3"
+                android:text="检查内容与要求"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/zhengjiao_textview_blue"
+                android:text="结论"
+                android:layout_weight="1"></TextView>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_liftZijianShiXiang"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:background="@drawable/zijian_textview_orange"
+            android:text="自检情况"
+            android:layout_weight="1.5"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textSize="18sp"
+                android:background="@drawable/zhengjiao_textview"
+
+                android:layout_weight="2.5"
+               />
+
+    </LinearLayout>
+
+</LinearLayout>

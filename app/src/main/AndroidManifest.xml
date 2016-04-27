@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choosecourse.intelligentchoosecourse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="智能选课系统"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.MainFragmentActivity"
+            android:label="智能选课系统"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.course.AllCourseActivity" />
+        <activity android:name=".main.course.ChoosedCourseActivity" />
+        <activity android:name=".main.course.ProfessionCourseListActivity" />
+        <activity android:name=".main.course.SheCourseListActivity" />
+        <activity android:name=".main.course.RenCourseListActivity" />
+        <activity android:name=".main.LoginActivity" />
+        <activity android:name=".main.CourseTableActivity" />
+        <activity android:name=".util.GradeActivity" />
+        <activity android:name=".db.Query" />
+        <activity android:name=".main.MyInformationActivity" />
+        <activity android:name=".main.course.SignUp" />
+        <activity android:name=".main.other.SuishoujiActivity" />
+        <activity android:name=".main.MessageActivity" />
+        <activity android:name=".main.InterestActivity" />
+        <activity android:name=".main.other.MessageInfoActivity"></activity>
+    </application>
+
+</manifest>

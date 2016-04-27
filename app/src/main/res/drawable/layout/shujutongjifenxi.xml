@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/titlebar"></include>
+
+    <TextView
+        android:background="@color/white"
+        android:drawableRight="@mipmap/xialajiantou_blue"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/darkblue"
+        android:text="数据统计分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/dtweibaoqingkuang"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:text="电梯维保情况分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/dtzijianqingkuang"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:text="电梯自检情况分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/dtshiongxianzhuang"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:text="电梯使用现状分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/dtzhenggaiqingkuang"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:text="电梯整改情况分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/dtguzhangqingkuang"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:text="电梯故障情况分析"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:id="@+id/gonggaolan"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@mipmap/youjiantou_blue"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:text="公告栏"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

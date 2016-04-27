@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quchwe.testspinner.JiXiuActivity">
+    <LinearLayout
+        android:id="@+id/rl_jixiu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/titlebar"></include>
+
+    <Button
+        android:id="@+id/btn_Jixiusuning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/max_text"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/suningicon"
+        android:drawableRight="@mipmap/arror"
+        android:text="  苏宁广场"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/all_dp"
+        android:textSize="@dimen/min_text"
+        android:text="地址：无锡市崇安区人民中路111号"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/all_dp"
+        android:textSize="@dimen/min_text"
+        android:text="联系人：黄国君"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/all_dp"
+        android:textSize="@dimen/min_text"
+        android:text="联系电话：0510-82038888"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="5dp"
+       android:text="1号电梯"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fenge"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:text="出现问题:"/>
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:textColor="#ff4b4b"
+            android:text="层门自动关门装置动作不正常"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

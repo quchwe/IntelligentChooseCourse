@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="报修人:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="张三"
+            android:id="@+id/baoxiuren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="报修日期:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="2016-01-01"
+            android:id="@+id/baoxiuriqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+            android:text="维修状态:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+            android:text="正常"
+            android:id="@+id/weixiuzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+    </ListView>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="异常状态（使用单位填写）"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_yczt"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="故障原因（维保检修人填写）"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_gzyy"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="分类代码"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_fldm"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="处理方法"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_clff"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/zhengjiao_textview_blue"
+                android:text="责任分区"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/zhengjiao_textview"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_azts"
+                        android:layout_weight="1"
+                        android:text="安装调试"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_xg"
+                        android:layout_weight="1"
+                        android:text="修改"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_by"
+                        android:layout_weight="1"
+                        android:text="保养"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_jqlj"
+                        android:layout_weight="1"
+                        android:text="机器零件"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_yybm"
+                        android:layout_weight="1"
+                        android:text="原因不明"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_dsz"
+                        android:layout_weight="1"
+                        android:text="第三者"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_sm"
+                        android:layout_weight="1"
+                        android:text="寿命"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/dtwxdxx_xx_bkkl"
+                        android:layout_weight="1"
+                        android:text="不可抗力"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <Button
+                    android:background="@color/transparent"
+                    android:textSize="15sp"
+                    android:drawableRight="@mipmap/youxiajiao_jiantou"
+                    android:paddingRight="5dp"
+                    android:text="故障对象区分"
+                    android:id="@+id/dtwxdxx_xx_gzdxqf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="备注"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_bz"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview_blue"
+                    android:text="更换部品"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:paddingRight="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/dtwxdxx_xx_ghbp"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:background="@drawable/zhengjiao_textview"
+                    android:text="null"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <Button
+                android:visibility="invisible"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="维修单提交"
+                android:background="@drawable/roundbutton_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

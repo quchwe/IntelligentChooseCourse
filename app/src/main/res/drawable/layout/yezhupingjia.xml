@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/titlebar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:paddingLeft="25dp"
+            android:text="服务态度"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/group1"
+                    android:paddingTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/fw_fcmy"
+                    android:text="非常满意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/fw_my"
+                    android:text="满意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/fw_yb"
+                        android:text="一般"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/fw_bmy"
+                        android:text="不满意"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:paddingLeft="25dp"
+            android:text="保养质量"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/group2"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/by_fcmy"
+                    android:text="非常满意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/by_my"
+                    android:text="满意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <RadioButton
+                    android:id="@+id/by_yb"
+                    android:text="一般"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/by_bmy"
+                    android:text="不满意"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingLeft="25dp"
+        android:textSize="20sp"
+        android:text="配合事项:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/phsx"
+        android:paddingTop="10dp"
+       android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiaobiankuang"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingLeft="25dp"
+        android:textSize="20sp"
+        android:text="意见栏:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/yjl"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiaobiankuang"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <Button
+        android:background="@drawable/roundbutton_blue"
+        android:text="提交"
+        android:id="@+id/tijiao"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/roundbutton_blue"
+        android:text="取消"
+        android:id="@+id/quxiao"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

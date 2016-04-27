@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/wathet">
+        <Button
+            android:id="@+id/btn_secondCheckBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/arror"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:text="返回"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/max_text"
+            android:textColor="@color/white"
+            android:text="轿顶检查信息"/>
+
+        <Button
+            android:id="@+id/btn_saoyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:text="扫一扫"
+             />
+
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:id="@+id/iv_nfc"
+           android:layout_width="130dp"
+           android:layout_height="100dp"
+           android:scaleType="fitXY"
+           android:layout_margin="@dimen/all_dp"
+           android:layout_centerInParent="true"
+           android:src="@mipmap/nfc"/>
+       <TextView
+       android:id="@+id/tv_align"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="50dp"
+       android:layout_centerHorizontal="true"
+       android:textSize="@dimen/middle_text"
+       android:layout_above="@+id/iv_nfc"
+       android:text="请将NFC手机靠近标签处"/>
+       <TextView
+           android:id="@+id/tv_use"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/m_dp"
+           android:layout_centerHorizontal="true"
+           android:textSize="@dimen/middle_text"
+           android:layout_above="@+id/tv_align"
+           android:text="欢迎使用易检通"/>
+       <Button
+           android:id="@+id/btn_nfc_submit"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/wathet"
+           android:textColor="@color/white"
+           android:textSize="@dimen/max_text"
+           android:text="提交"
+           android:layout_marginLeft="@dimen/dp_20"
+           android:layout_marginRight="@dimen/dp_20"
+           android:layout_below="@+id/iv_nfc"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="41dp" />
+
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 标题栏,用到tile_height,标题字体max_text-->
+        <include
+            layout="@layout/titlebar"></include>
+        <!-- 这个字体是middle_text-->
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/middle_text"
+            android:background="@color/grey"
+            android:text="预防事故发生，杜绝违规操作。 "/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/middle_text"
+            android:background="@color/grey"
+            android:text="请认真检查下列事项:"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+        <ExpandableListView
+            android:groupIndicator="@null"
+            android:id="@+id/check_details_list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ExpandableListView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+        <ExpandableListView
+            android:groupIndicator="@null"
+            android:id="@+id/check_details_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ExpandableListView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fenge"/>
+
+        <Button
+            android:id="@+id/btn_jiaodingCheck_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@drawable/roundbutton_blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/max_text"
+            android:text="提交"/>
+    </LinearLayout>
+
+</LinearLayout>

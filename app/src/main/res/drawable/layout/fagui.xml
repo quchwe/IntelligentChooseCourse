@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wathet"
+        android:weightSum="1">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/faguibackbutton"
+                android:text=" 返回"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"/>
+        <TextView android:id="@+id/faguiTile"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:textSize="20sp"
+                  android:text="相关法规"
+                  android:textColor="@color/white"
+            />
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diandiandian"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"/>
+    </RelativeLayout>
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:imeOptions="actionGo"
+        android:layout_margin="10dp"
+        android:queryHint="搜索"
+        android:id="@+id/sv_faserch"></SearchView>
+    <Button
+        android:id="@+id/btn_elevatorbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/middle_text"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:drawableLeft="@mipmap/faguilogo"
+        android:text="  电梯保养相关法律法规"/>
+    <Button
+        android:id="@+id/btn_elevatorguan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/middle_text"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:text="  电梯使用管理规则"/>
+    <Button
+        android:id="@+id/btn_elevatorfa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/middle_text"
+        android:gravity="left|center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/arror"
+        android:text="  电梯法等七部相关法律法规实行"/>
+</LinearLayout>

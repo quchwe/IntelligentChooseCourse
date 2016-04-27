@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:scrollbars="vertical"
+               android:background="@android:color/transparent"
+                android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/titlebar"></include>
+        <!--<Button-->
+            <!--android:id="@+id/btn_jixiue"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/round_buton"-->
+            <!--android:text="急修单"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="4dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@mipmap/fenge"/>-->
+        <LinearLayout
+            android:id="@+id/ly_suningLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <Button
+                android:id="@+id/btn_suning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/max_text"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/suningicon"
+                android:drawableRight="@mipmap/arror"
+                android:text="  苏宁广场"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/all_dp"
+                android:textSize="@dimen/min_text"
+                android:text="地址：无锡市崇安区人民中路111号"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/all_dp"
+                android:textSize="@dimen/min_text"
+                android:text="联系人：黄国君"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/all_dp"
+                android:textSize="@dimen/min_text"
+                android:text="联系电话：0510-82038888"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></View>
+
+        <ListView
+            android:id="@+id/lv1_task"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none"
+            />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+<LinearLayout
+    android:id="@+id/lyWUaiLayou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_wuai"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/max_text"
+            android:gravity="left|center"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/wuaiicon"
+            android:drawableRight="@mipmap/arror"
+            android:text="  五爱广场"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></View>
+        <ListView
+            android:id="@+id/lv2_task"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+        <LinearLayout
+            android:id="@+id/ly_hengLongLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_henglong"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/max_text"
+        android:gravity="left|center"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/hwnglongicon"
+        android:drawableRight="@mipmap/arror"
+        android:text="  恒隆广场"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></View>
+
+        <ListView
+            android:id="@+id/lv3_task"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="true"
+            android:scrollbars="none"
+            />
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
